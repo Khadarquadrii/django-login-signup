@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Connecting Css Bootstrap Files -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-utilities.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-utilities.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
+</head>
+<body>
+    <div class="container-fluid m-auto mt-5 w-50">
+        <div>
+            <div class="card">
+                <div class="card-header text-center bg-dark text-white">
+                    <h1>Log in</h1>
+                </div>
+                <div class="card-body">
+                    <h6 class="text-center">Don't have an account?   <a class="text-decoration-none" href="{% url 'signup:signup' %}">Sign up</a></h6>
+                    <input class="form-control mt-3" type="text" placeholder="Phone number , username , email">
+                    <input class="form-control mt-3" type="password" placeholder="Password">
+                </div>
+                <div class="m-auto">
+                    <button class="btn bg-dark text-white px-5 mb-2">Forget Password?</button>
+                    <button class="btn bg-dark text-white px-5 mb-2 ms-4">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
+
+
+<!-- Connecting Javascript bootstrap files -->
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.esm.js' %}"></script>
+<script src="{% static 'js/bootstrap.esm.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
